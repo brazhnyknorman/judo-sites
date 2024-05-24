@@ -13,33 +13,70 @@
         margin-bottom: 75px;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Select all anchor tags
+          const anchors = document.querySelectorAll('a');
+  
+          // Iterate over each anchor
+          anchors.forEach(anchor => {
+              const href = anchor.getAttribute('href');
+              // Check if the link is external and not already set to open in a new tab
+              if (href && (href.startsWith('http://') || href.startsWith('https://')) && anchor.getAttribute('target') !== '_blank') {
+                  anchor.setAttribute('target', '_blank'); // Add target="_blank"
+                  anchor.setAttribute('rel', 'noopener noreferrer');
+              }
+          });
+      });
+    </script>
     <meta charset="utf-8">
     <title>Judo Bookmarks</title>
   </head>
   <body class="center">
     <img src="2.jpg" style="width:500px;height:auto;" class="center">
-    <h1>Judo Links</h1>
+    <h1>Judo Bookmarks</h1>
     <h2>Books</h2>
-      <ul>
-        <li>Hi</li>
-        <li>Bye</li>
-      </ul>
+      <li><a href="https://archive.org/details/attacking-judo/page/78/mode/2up">Attacking Judo</a></li>
+      <li><a href="https://judoinfo.com/kimura2/">Kimura - My Judo (short)</a></li>
+      <br>
+      <li><a href="https://www.amazon.co.uk/exec/obidos/ASIN/1874572151/ref=nosim/judoinformatio0f">Yamashita - Spirit Of Judo</a></li>
     <h2>Articles</h2>
-      <li><a href="https://www.bjjee.com/articles/travis-stevens-on-dealing-with-constant-injuries-through-mental-strength/">Travis Stevens & Injury Mindset</a></li>
-      <li><a href="https://featured.japan-forward.com/sportslook/category/features/kosei-inoue-judo-story/">Kosei Inoue </a></li>
+      <li><a href="https://www.bjjee.com/articles/travis-stevens-on-dealing-with-constant-injuries-through-mental-strength/">Travis Stevens - Injuries</a></li>
+      <li><a href="https://featured.japan-forward.com/sportslook/category/features/kosei-inoue-judo-story/">Kosei Inoue - 14 Part Series</a></li>
+      <li><a href="https://judoinfo.com/uchikomi/">Uchikomi - Cons, The Importance of Drills</a></li>
+      <li><a href="https://judoinfo.com/movement2/">The Importance of Momentum in Judo</a></li>
+    <h2>Technique Databases</h2>
+      <li><a href="https://judoinfo.com/techjudo/">Tech Judo - Technique Database (archaic)</a></li>
     <h2>Wikipedia Artcles</h2>
       <li><a href="https://en.wikipedia.org/wiki/Satoshi_Ishii">Satoshi Ishii</a></li>
       <li><a href="https://en.wikipedia.org/wiki/Keiji_Suzuki">Keiji Suzuki</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/Masahiko_Kimura">Masahiki Kimura</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Masahiko_Kimura">Masahiko Kimura</a></li>
     <h2>Judo Ontario/Canada Info & Oppurtunities</h2>
+      <li><a href="https://www.judoontario.ca/calendar">Judo Ontario Calendar</a></li>
+      <li><a href="https://www.judoontario.ca/regional-training-centre">Ontario Regional Training Centre Program</a></li>
     <h2>Blogs</h2>
-      <li><a href="https://judofan.com/">JudoFan.com, instructor in Japan</a></li>
+      <li><a href="https://judofan.com/">JudoFan.com</a></li>
     <h2>Videos</h2>
       <li><a href="https://www.facebook.com/sampabjj/videos/262275324759711/">Japanese Olympic Team Announcement</a></li>
     <h2>Physio</h2>
+      <li><a href="https://www.athletescare.com/portfolio/sina-akbarzadeh-673.html">YorkU Location Booking Link</a></li>
+      <li><a href="https://www.physio-pedia.com/Lateral_Epicondylitis">Physiopedia - Tennis Elbow</a></li>
+      <li><a href="https://www.physio-pedia.com/Anterior_Cruciate_Ligament_(ACL)_Rehabilitation">Physiopedia - ACL Rehab</a></li>
+    <h2>Strength & Training Development</h2>
+      <li><a href="https://judoinfo.com/fitness/">How to Train Strength, Grip, and Recovery for Judo</a></li>
+      <li><a href="https://judoinfo.com/wp-content/uploads/2016/07/peaking.pdf">Judo Peaking - How To Create Your Strength Program (Ewan Beaton, Judo Canada)</a></li>
     <h2>Studies</h2>
+      <li><a href="https://commons.nmu.edu/cgi/viewcontent.cgi?article=1725&context=isbs">How A Bad Uchi Komi & Seo Nage Ruins Your Elbow</a></li>
+      <li><a href="https://judoinfo.com/research12/">Distribution of Judo Weight Cutting</a></li>
+      <li><a href="https://judoinfo.com/research23/">Hand Dominance of Elite Versus Non-Elite Judo Players</a></li>
+      <li><a href="https://judoinfo.com/research/">More studies (judoinfo.com)</a></li>
+      <br>
+      <li><a href="https://www.unimelb.edu.au/newsroom/news/2022/november/ruptured-acls-can-heal-without-surgery,-study-finds">Study Finds ACLs Heal Better Without Surgery</a></li>
     <h2>Superstar & Paid Content</h2>
       <li><a href="https://www.superstarjudo.com/kosei-inoue?page=2&sort=latest">Superstar Judo - Kosei Inoue</a></li>
+      <li><a href="https://bjjfanatics.com/products/ne-waza-mastery-by-travis-stevens">Travis Stevens Full Newaza</a></li>
+    <h2>Free Textbooks & Books</h2>
+      <li><a href="https://libgen.is/">libgen.is</a></li>
   </body>
 </html>
 
